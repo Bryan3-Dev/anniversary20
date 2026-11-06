@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff4f7">
+    <title>20th Wedding Anniversary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- HALAMAN PEMBUKA -->
+        <section id="page-date" class="page active">
+            <div class="flower">✿</div>
+
+            <p class="eyebrow">A little special day</p>
+
+            <h1>Halo Mama & Papa</h1>
+
+            <p class="description">
+                Ada sesuatu yang ingin aku tanyakan...
+            </p>
+
+            <div class="question">
+                Ini tanggal berapa ya?
+            </div>
+
+            <div class="date-answer">
+                11 Oktober
+            </div>
+
+            <button class="main-button" onclick="showPage('page-day')">
+                Benar, lanjut →
+            </button>
+        </section>
+
+
+        <!-- HALAMAN PERTANYAAN HARI -->
+        <section id="page-day" class="page">
+            <p class="eyebrow">Let's see...</p>
+
+            <h2>Hari apa ya?</h2>
+
+            <p class="description">
+                Pilih jawaban yang menurut kalian benar.
+            </p>
+
+            <div class="options">
+                <button class="option" onclick="selectAnswer(this, 'A')">
+                    A. Hari Rabu
+                </button>
+
+                <button class="option" onclick="selectAnswer(this, 'B')">
+                    B. Hari biasa
+                </button>
+
+                <button class="option" onclick="selectAnswer(this, 'C')">
+                    C. Hari anniversary kalian
+                </button>
+            </div>
+
+            <p id="answer-message"></p>
+
+            <button class="main-button" onclick="checkAnswer()">
+                Lanjut →
+            </button>
+        </section>
+
+
+        <!-- HALAMAN AYAT ALKITAB -->
+        <section id="page-bible" class="page">
+            <div class="flower">♡</div>
+
+            <p class="eyebrow">A beautiful reminder</p>
+
+            <h2>Waktu untuk membaca</h2>
+
+            <p class="description">
+                Boleh baca 1 Petrus 3:1, 2 dan 7?
+            </p>
+
+            <div class="verse">
+                <span>1 PETRUS 3:1, 2 DAN 7</span>
+                <p>
+                    Sebuah pengingat tentang kasih,
+                    sikap saling menghargai, dan
+                    kehidupan keluarga yang harmonis.
+                </p>
+            </div>
+
+            <p class="description">
+                Kalau sudah, bisa pencet tombol di bawah ini ya...
+            </p>
+
+            <button class="main-button" onclick="showPage('page-final')">
+                Lanjut →
+            </button>
+        </section>
+
+
+        <!-- HALAMAN ANNIVERSARY -->
+        <section id="page-final" class="page final-page">
+
+            <p class="eyebrow">A special celebration</p>
+
+            <div class="heart">♡</div>
+
+            <h1 class="anniversary-title">
+                Happy 20th
+                <span>Wedding Anniversary</span>
+            </h1>
+
+            <div class="decorative-line"></div>
+
+            <h2 class="parents">
+                Selamat anniversary
+                ke-20 ya, Mama dan Papa
+                ku yang tercinta!
+            </h2>
+
+            <p class="love-message">
+                Dua puluh tahun telah dilewati bersama.
+                Terima kasih sudah menjadi orang tua
+                yang luar biasa.
+
+                <br><br>
+
+                Semoga kasih sayang, kebahagiaan,
+                dan keharmonisan selalu menyertai
+                keluarga kita.
+
+                <br><br>
+
+                I love you, Mama & Papa. ♡
+            </p>
+
+          <div class="photo-gallery">
+
+    <div class="photo-item">
+        <img
+            src="./46443.jpg"
+            alt="Foto Mama dan Papa"
+        >
+    </div>
+
+</div>
+
+            <p class="photo-caption">
+                A beautiful love story, 20 years and counting.
+            </p>
+
+            <button class="restart-button" onclick="restartWebsite()">
+                ↺ Kembali ke awal
+            </button>
+
+            <p class="footer">
+                Made with love ♡
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
